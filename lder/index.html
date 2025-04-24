@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EB Pearls</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+    }
+    body {
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #fff;
+      border-bottom: 1px solid #eee;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #f4c542;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+    .contact {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .btn {
+      background-color: #f4c542;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #d9a600;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #f9f9f9;
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 40px;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-weight: 600;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat p:first-child {
+      font-size: 24px;
+      color: #f4c542;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">EB</div>
+    <nav>
+      <ul>
+        <li><a href="#">Solution</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="contact">
+      <span>02 8011 6568</span>
+      <button class="btn" onclick="enquireClick()">ENQUIRE</button>
+    </div>
+  </header>
+  <section class="hero">
+    <h1>We are EB Pearls</h1>
+    <p>A hybrid business model with a holistic approach to online business.</p>
+    <div class="stats">
+      <div class="stat">
+        <p>2800</p>
+        <p>Projects</p>
+      </div>
+      <div class="stat">
+        <p>140</p>
+        <p>Staffs</p>
+      </div>
+      <div class="stat">
+        <p>4</p>
+        <p>Offices</p>
+      </div>
+      <div class="stat">
+        <p>729</p>
+        <p>Happy Clients</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function enquireClick() {
+      alert("Thank you for your interest! We’ll get back to you shortly.");
+    }
+  </script>
+</body>
+</html>
