@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Telerik Clone</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #fff;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #2d2d2d;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .logo {
+    font-weight: bold;
+    color: #6AD54D;
+  }
+  
+  .nav-links a,
+  .account-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  
+  .hero {
+    background: url('eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI1MTU2NzEzL29yaWdpbmFsXzM1ZGM2MjlmNWNiZmE3NTlkNTQxNDc0MzYwNTUxNzhlLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTIwMCwiaGVpZ2h0Ijo2MzAsImZpdCI6ImNvdmVyIiwid2l0.webp') center center/cover no-repeat;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;
+    color: white;
+  }
+  
+  .overlay h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .overlay p {
+    font-size: 18px;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fafafa;
+  }
+  
+  .card h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  .btn.green {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btn.blue {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .btn.red {
+    background-color: #e53935;
+    color: white;
+  }
+  
+  .btn.dark {
+    background-color: #333;
+    color: white;
+  }
+  
+  .green {
+    color: #4CAF50;
+
+  }
+  
+  .blue {
+    color: #007BFF;
+
+  }
+  
+  .red {
+    color: #e53935;
+
+  }
+</style>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">Progress<sup>®</sup> Telerik<sup>®</sup></div>
+        <nav class="nav-links">
+            <a href="#">Products</a>
+            <a href="#">Enterprise</a>
+            <a href="#">Free Trials</a>
+            <a href="#">Pricing</a>
+            <a href="#">Support & Learning</a>
+            <a href="#">About Us</a>
+        </nav>
+        <div class="account-links">
+            <a href="#">Your Account</a>
+            <a href="#">Telerik Platform</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="overlay">
+            <h1>Develop Experiences</h1>
+            <p>UI frameworks and app development tools that 2.1 million developers love</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="card">
+            <h3 class="green">.NET</h3>
+            <h2>DevCraft™</h2>
+            <p>.NET UI controls, reporting and developer productivity tools</p>
+            <a class="btn green" href="#">Learn more</a>
+        </div>
+
+        <div class="card">
+            <h3 class="blue">NATIVE MOBILE</h3>
+            <h2>NativeScript<sup>®</sup></h2>
+            <p>Open source framework for building truly native mobile apps...</p>
+            <a class="btn blue" href="#">Learn more</a>
+        </div>
+
+        <div class="card">
+            <h3 class="red">HTML5</h3>
+            <h2>Kendo UI<sup>®</sup></h2>
+            <p>JavaScript, HTML5 UI widgets for responsive web and data visualization</p>
+            <a class="btn red" href="#">Learn more</a>
+        </div>
+
+        <div class="card">
+            <h3>CMS</h3>
+            <h2>Progress<sup>®</sup> Sitefinity™</h2>
+            <p>Web Content Management and Customer Analytics...</p>
+            <a class="btn dark" href="#">Learn more</a>
+        </div>
+
+        <div class="card">
+            <h3>MOBILE</h3>
+            <h2>Telerik<sup>®</sup> Platform</h2>
+            <p>Complete cross-platform solution to design, build, deploy, manage...</p>
+            <a class="btn dark" href="#">Learn more</a>
+        </div>
+        <div class="card">
+            <h3>TESTING</h3>
+            <h2>Test Studio<sup>®</sup></h2>
+            <p>Release better quality software faster with test automation solution</p>
+            <a class="btn dark" href="#">Learn more</a>
+        </div>
+    </section>
+
+</body>
+
+</html>
